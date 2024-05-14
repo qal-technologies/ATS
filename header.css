@@ -1,0 +1,96 @@
+header {
+  width: 100%;
+  padding-inline: 10px;
+  padding: 10px;
+  height: 70px;
+  display: block;
+  position: sticky;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--green);
+  border-end-end-radius: 10px;
+  border-end-start-radius: 10px;
+  z-index: 999;
+}
+
+header .user-info {
+  display: flex;
+  justify-content: space-between;
+}
+
+header .div-left,
+header .div-right {
+  display: flex;
+  align-items: center;
+}
+
+.div-left .user-image {
+  width: 50px;
+  height: 50px;
+  display: grid;
+  margin-right: 10px;
+  place-content: center;
+  border: 1px solid var(--green);
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 10px;
+}
+
+.user-image svg,
+.user-image img {
+  width: 50px;
+  background-color: white;
+  height: 50px;
+  object-fit: cover;
+  color: #000000;
+  user-select: none;
+}
+
+#user-info-preview {
+  display: grid;
+  row-gap: 5px;
+  color: black;
+  align-items: center;
+}
+
+#user-info-preview #user-name {
+  display: grid;
+  width: max-content;
+  height: max-content;
+  text-align: center;
+  background: linear-gradient(160deg, var(--green), var(--red));
+  padding: 1px;
+  padding-inline: 10px;
+  letter-spacing: 1px;
+  border-radius: 10px;
+  font-family: PoppinsLight;
+  font-size: 0.7em;
+  place-content: center;
+  user-select: text;
+  color: white;
+}
+
+#user-info-preview #user-id-no {
+  display: flex;
+  text-align: center;
+  padding-inline: 5px;
+  font-size: x-small;
+  font-family: PoppinsReg;
+  user-select: text;
+  justify-content: left;
+}
+
+#user-id-no:hover {
+  text-decoration: underline;
+}
+
+.div-right .notification {
+  color: var(--green);
+  padding: 10px;
+}
+
+.notification svg {
+  width: 21.5px;
+  height: 21.5px;
+}

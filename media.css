@@ -1,0 +1,39 @@
+@media screen and (max-width: 800px) {
+  main {
+    display: block;
+    width: 100%;
+    height: 280px;
+  }
+  main div.main-div {
+    width: 100%;
+    height: 280px;
+  }
+  .upper .user-balance {
+    line-height: 150px;
+  }
+  div.btns {
+    margin-top: 0px;
+  }
+  section.history-section,
+  section.school-map, section.settings-section {
+    width: 100%;
+  }
+  .user-history, .user-settings {
+    max-height: 335px;
+  }
+  .user-down {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    place-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .history-info .history-texts {
+    max-width: 200px;
+  }
+  .history-info .info {
+    font-size: smaller;
+  }
+}

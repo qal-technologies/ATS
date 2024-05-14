@@ -1,0 +1,358 @@
+/* for genral div flex containing both the main div and the history div  */
+div.flex {
+  display: inline-flex;
+  flex-wrap: wrap;
+  place-content: center;
+  width: 100vw;
+  height: max-content;
+  gap: 10px;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+/* main div container */
+main {
+  display: block;
+  min-width: auto;
+  width: 40%;
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(20px);
+  border-radius: 20px;
+  place-content: center;
+  height: auto;
+  max-height: 370px;
+  place-content: center;
+  margin-top: 10px;
+  margin: 10px;
+}
+
+/* main div  */
+main div.main-div {
+  display: grid;
+  padding: 15px;
+  padding-bottom: 10px;
+  width: 40vmax;
+  min-width: auto;
+  height: auto;
+  background: linear-gradient(160deg, var(--green), var(--red));
+  border-radius: 20px;
+  border: none;
+  place-self: center;
+  backdrop-filter: blur(20px);
+  color: white;
+}
+
+/* upper section of the main div  */
+main .upper {
+  display: grid;
+  font-family: PoppinsBold;
+  width: 95%;
+  place-content: center;
+  text-align: center;
+  /* border: 1px solid black; */
+}
+
+/* user balance style  */
+.upper .user-balance {
+  line-height: 200px;
+  padding: 5px;
+  padding-top: 10px;
+  font-size: 75px;
+  letter-spacing: 1px;
+}
+
+/* for buttons under the main div */
+div.btns {
+  display: flex;
+  width: 100%;
+  place-self: center;
+  justify-content: space-between;
+  height: 100px;
+  padding-inline: 2%;
+  color: white;
+  text-align: center;
+  gap: 2%;
+  margin-top: -10px;
+  border-radius: 100px;
+}
+
+div.btns a {
+  display: grid;
+  padding: 0;
+  color: white;
+  cursor: pointer;
+  object-fit: contain;
+}
+
+div.btns p {
+  font-size: small;
+  cursor: default;
+}
+
+div.btns a {
+  display: grid;
+  padding: 10px;
+  place-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: max-content;
+  /* border: 1px solid black; */
+  height: max-content;
+  place-content: center;
+}
+
+div.b-icon {
+  display: grid;
+  border: 2px solid rgba(200, 200, 200, 0.3);
+  padding: 5px;
+  place-content: center;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  width: 50px;
+  height: 50px;
+  backdrop-filter: blur(20px);
+}
+
+div.btns a div.b-icon:hover {
+  background: var(--green-trans);
+  box-shadow: 0px 0px 10px rgba(50, 50, 50, 0.6);
+}
+
+/* History section  */
+
+section.history-section {
+  display: block;
+  margin-top: 10px;
+  background-color: rgba(250, 250, 250, 0.5);
+  backdrop-filter: blur(20px);
+  min-width: 300px;
+  width: 55%;
+  border-radius: 20px;
+  height: max-content;
+  padding: 10px;
+  place-content: center;
+}
+
+/* for history header  */
+.history-header {
+  width: 100%;
+  place-content: center;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  padding-inline: 10px;
+  user-select: none;
+}
+
+/* history content  */
+.user-history {
+  display: grid;
+  width: 100%;
+  height: max-content;
+  max-height: 300px;
+  gap: 4px;
+  overflow: scroll;
+}
+
+/* search icon  */
+.history-section .search-icon,
+.map-section .map-icon {
+  width: 20px;
+  height: 20px;
+}
+
+span.history-search-icon,
+span.map-search-icon {
+  display: grid;
+  padding: 10px;
+  width: 35px;
+  height: 35px;
+  place-content: center;
+  color: var(--green);
+  border-radius: 50%;
+  background: transparent;
+}
+
+/* search icon hover effect  */
+span.history-search-icon:hover,
+span.map-search-icon:hover {
+  background: #00949e1f;
+  color: white;
+}
+
+/* history div styling  */
+div.history {
+  display: flex;
+  padding: 6px;
+  padding-block: 10px;
+  justify-content: space-between;
+  background-color: rgb(223, 250, 255, 0.5);
+  border-radius: 15px;
+  backdrop-filter: blur(20px);
+  border: 1px solid #00949e21;
+  width: 100%;
+  height: max-content;
+}
+
+.history .history-info {
+  width: max-content;
+  display: flex;
+  align-items: center;
+}
+
+/* history tag logo  */
+.history-info .logo {
+  display: grid;
+  width: 50px;
+  height: 50px;
+  place-content: center;
+  padding: 10px;
+  border: 1px solid var(--green);
+  margin-right: 10px;
+  border-radius: 1000px;
+}
+
+.history-info .history-texts {
+  width: auto;
+  max-width: max-content;
+  min-width: 100px;
+  word-break: keep-all;
+}
+
+/* history title  */
+.history-info .title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  font-family: PoppinsBold;
+  letter-spacing: 1px;
+  font-size: 1em;
+  padding: 0;
+}
+
+/* for history price  */
+.history .price {
+  width: max-content;
+  height: 100%;
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  font-size: smaller;
+  color: red;
+}
+
+.history-right {
+  padding: auto;
+  min-width: 30px;
+  width: auto;
+  height: auto;
+  margin-left: 2px;
+}
+
+/* for history date  */
+.history-right span.date {
+  font-size: xx-small;
+  font-family: PoppinsSemi;
+  display: grid;
+  place-content: center;
+  color: black;
+}
+
+.history-info .info {
+  padding-top: 4px;
+  font-size: 0.8em;
+}
+
+/* for funding and subscription */
+#funding {
+  color: rgb(76, 190, 23);
+}
+
+/* map styles  */
+section.map-section {
+  display: block;
+  background-color: rgba(250, 250, 250, 0.5);
+  backdrop-filter: blur(20px);
+  padding: 10px;
+  width: 100%;
+  height: max-content;
+  max-height: 90vh;
+  border-radius: 20px;
+  margin-top: 10px;
+  min-width: 300px;
+  place-content: center;
+}
+
+h2.map-header {
+  width: 100%;
+  user-select: none;
+  height: 55px;
+  text-align: center;
+  text-align: center;
+  display: block;
+  padding: 10px;
+  padding-top: 15px;
+  overflow: hidden;
+}
+
+div.upper-map {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.map-search {
+  width: 100%;
+  padding: 0;
+  margin-top: 10px;
+  display: flex;
+  place-content: center;
+  justify-content: space-between;
+}
+
+.map-search input {
+  border: 1px solid rgba(58, 175, 198, 0.2);
+  outline: none;
+  width: 100%;
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(245, 245, 245, 0.3);
+  backdrop-filter: blur(20px);
+}
+
+.map-search input::placeholder {
+  letter-spacing: 1px;
+}
+
+.map-search input:focus {
+  border: 1px solid var(--green-trans);
+}
+
+.map-search button#search-place {
+  color: white;
+  background: var(--green);
+  padding: 8px;
+  font-size: small;
+  margin-left: 10px;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+}
+
+h2.map-header p.search-warning {
+  color: red;
+  font-size: x-small;
+  letter-spacing: 2px;
+  padding-top: 5px;
+  user-select: none;
+  text-align: center;
+}
+
+div#map {
+  width: 100%;
+  height: auto;
+  min-height: 70vh;
+  border: 1px solid var(--green-trans);
+  outline: none;
+  border-radius: 20px;
+}

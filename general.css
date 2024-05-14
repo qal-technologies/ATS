@@ -1,0 +1,130 @@
+@font-face {
+  font-family: PoppinsLight;
+  src: url(../src/fonts/Poppins-Light.ttf);
+}
+
+@font-face {
+  font-family: PoppinsReg;
+  src: url(../src/fonts/Poppins-Regular.ttf);
+}
+
+@font-face {
+  font-family: PoppinsMed;
+  src: url(../src/fonts/Poppins-Medium.ttf);
+}
+
+@font-face {
+  font-family: PoppinsSemi;
+  src: url(../src/fonts/Poppins-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: PoppinsBold;
+  src: url(../src/fonts/Poppins-Bold.ttf);
+}
+
+:root {
+  --gradient-color: linear-gradient(#00bdcb, #ff4965);
+  --green: #00949e;
+  --green-trans: #00949e87;
+  --red: #a91128f0;
+  --red-trans: #a91128aa;
+  --blur: blur(20px);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  box-sizing: border-box;
+  font-family: PoppinsReg, PoppinsLight, PoppinsMed, PoppinsSemi, PoppinsBold,
+    sans-serif;
+  transition: all 400ms ease-in-out;
+  list-style: none;
+}
+
+body,
+html {
+  background-color: rgb(230, 230, 230);
+  background-position: 100%;
+  background: url("../src/img/bg.jpeg");
+  background-repeat: no-repeat;
+  background-clip: border-box;
+  background-size: cover;
+  background-attachment: local;
+  display: grid;
+  scroll-behavior: smooth;
+  width: 100vw;
+  height: 100%;
+}
+
+/* setting the width/height For all svg  */
+.svg {
+  display: grid;
+  width: 30px;
+  height: 30px;
+}
+
+
+/* styling for the back button at the top of the page  */
+div.page-upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+  padding: 20px;
+}
+
+.page-upper .backBtn {
+  width: 40px;
+  height: 40px;
+  background-color: rgba(200, 200, 200, 0.3);
+  backdrop-filter: blur(20px);
+  color: var(--green);
+  display: grid;
+  place-content: center;
+  border-radius: 50%;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-size: x-large;
+  margin-bottom: 10px;
+}
+
+.backBtn:hover {
+  border: 1px solid var(--green-trans);
+  background-color: rgba(169, 238, 255, 0.271);
+}
+
+/* for main company tag style  */
+footer div.company {
+  display: grid;
+  place-content: center;
+  padding: 10px;
+  width: 100%;
+}
+
+.company div.powered-by {
+  font-size: x-small;
+  user-select: none;
+  display: grid;
+  text-align: center;
+}
+
+div.powered-by div.company-info {
+  user-select: text;
+  align-items: center;
+  display: flex;
+  font-size: smaller;
+  width: 100%;
+  padding-inline: 10px;
+  border-radius: 15px;
+  column-gap: 10px;
+  justify-content: space-between;
+  background: linear-gradient(160deg, var(--green), var(--red));
+  letter-spacing: 3px;
+  color: white;
+}
+
+.company-name {
+  font-family: PoppinsMed;
+}
