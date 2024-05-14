@@ -1,0 +1,19 @@
+{
+  "user": {
+    "name": "Paschal Ngaoka",
+    "regNo": "10746107BH",
+    "matricNo": "21/21146175",
+    "department": "Med. Lab. Science",
+    "level": "300",
+    "profilePic": "../src/img/logo.png",
+    "password": "QALTECH"
+  },
+  "card": {
+    "id": "ID-33445566",
+    "balance": 2720,
+    "subscribed": true,
+    "collected": true,
+    "expiry": 2026
+  },
+  "trip": {}
+}
